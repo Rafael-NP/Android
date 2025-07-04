@@ -29,21 +29,28 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    height: 150px;
+    min-height: 150px;
     text-align: center;
-    padding-top: 20px;
-    color: white;
+    padding-top: 40px;
 }
 header h1{
+    color: white;
     font-family: var(--fontDestaque);
-    margin-bottom: 20px;
-    font-size: 2.8em;
-    text-shadow: 1px 1px 1px #000;
+    font-size: 3em;
     font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 }
 header p{
-    font-family: var(--fontPadrao);
-    font-size: 0.8em;
+    font-family: var(--fontePadrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
 }
 header span{
     color: white;
@@ -52,17 +59,18 @@ header span{
     font-size: 33px;
 }
 nav{
-    background: var(--cor5);
-    padding: 10px 30px;
-    box-shadow: 0 7px 7px #000000a2;
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px #00000031;
 }
 nav a{
-    color: #d8d8d8;
-    font-weight: 700;
+    color: var(--cor1);
     padding: 10px;
+    border-radius: 5px;
     text-decoration: none;
-    cursor: pointer;
-    transition: .7s;
+    font-weight: bold;
+    text-wrap: nowrap;
+    transition: .5s;
 }
 nav a:hover{
     background: var(--cor4);
@@ -70,15 +78,15 @@ nav a:hover{
     border-radius: 5px;
 }
 main{
-    background: white;
     min-width: 300px;
     max-width: 1000px;
-    margin: 1px auto;
-    padding: 1px 20px;
-    box-shadow: 0 0 10px #000000b9;
+    margin: auto;
     margin-bottom: 30px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 main h1{
     margin-top: 0;
@@ -136,10 +144,7 @@ main a:hover{
     text-decoration: underline 1px var(--cor4);
 }
 main img{
-    min-width: 50%;
-    min-height: 50%;
-    display: block;
-    margin: 20px auto;
+    width: 100%;
 }
 main #irina{
     box-shadow: 0 0 10px #000000b2;
